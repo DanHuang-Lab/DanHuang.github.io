@@ -33,13 +33,28 @@
       padding:60px 0; 
       border-bottom:2px solid var(--border); 
       margin-bottom:40px;
-      background-image: url('ccu2.jpeg');
-      background-size: contain;
+      background-image: url('ccu3.jpeg');
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;
       position: relative;
-      min-height: 300px;
+      min-height: 400px;
+      overflow: hidden;
+    }
+    .header-section::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('ccu3.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(2px);
+      z-index: 0;
     }
     .header-section::before{
       content: '';
@@ -48,7 +63,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(255,255,255,0.3);
+      background: rgba(0,0,0,0.4);
       z-index: 1;
     }
     .header-section > * {
@@ -56,11 +71,11 @@
       z-index: 2;
     }
     .group-title{margin-bottom:20px}
-    .group-title h1{font-size:48px; margin:0; color:var(--brand); font-weight:700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3)}
-    .group-title h2{font-size:24px; margin:8px 0 0 0; color:var(--muted); font-weight:400; text-shadow: 1px 1px 2px rgba(0,0,0,0.3)}
+    .group-title h1{font-size:48px; margin:0; color:#ffffff; font-weight:700; text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 0 0 20px rgba(124,58,237,0.5)}
+    .group-title h2{font-size:24px; margin:8px 0 0 0; color:#ffffff; font-weight:400; text-shadow: 2px 2px 4px rgba(0,0,0,0.8)}
     .department-info{margin-top:20px}
-    .department-info p{margin:8px 0; color:var(--muted); font-size:16px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3)}
-    .department-info a{color:var(--brand); font-weight:500}
+    .department-info p{margin:8px 0; color:#ffffff; font-size:16px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8)}
+    .department-info a{color:#ffffff; font-weight:500; text-shadow: 2px 2px 4px rgba(0,0,0,0.8)}
     .hero{display:grid; grid-template-columns:80% 20%; gap:28px; padding:40px 0; align-items:center}
     .hero h1{font-size:40px; margin:0 0 8px 0}
     .hero p{color:var(--muted); line-height:1.6}
@@ -91,11 +106,7 @@
       <div class="spacer"></div>
       <a href="news.html">News</a>
       <a href="experience.html">Experience</a>
-      <a href="grant.html">Grant</a>
-      <a href="publication.html">Publications</a>
-      <a href="awards.html">Awards</a>
-      <a href="talk.html">Talks</a>
-      <a href="service.html">Service</a>
+      <a href="people.html">People</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -117,21 +128,64 @@
     <section class="hero">
       <div>
         <h1>Professional Experience</h1>
-        <span class="pill">Academic Positions • Research Experience • Career Timeline</span>
-        <p>My academic and professional journey in concrete science, from graduate research to faculty positions, focusing on sustainable construction materials and coastal infrastructure resilience.</p>
+        <span class="pill">Academic Positions • Research • Publications • Awards • Presentations</span>
+        <p>My comprehensive academic and professional journey in concrete science, including positions, research grants, publications, awards, and conference presentations focused on sustainable construction materials and coastal infrastructure resilience.</p>
       </div>
       <div>
         <img src="portait.JPG" alt="Dan Huang portrait" />
       </div>
     </section>
 
-    <!-- Experience -->
+    <!-- Professional Experience -->
     <section class="section">
       <h2>Current & Previous Positions</h2>
       <ul>
         <li><strong>Assistant Professor</strong>, Coastal Carolina University (2023–Present)</li>
         <li><strong>Visiting Assistant Professor</strong>, Lafayette College (2022–2023)</li>
         <li><strong>Ph.D. Researcher</strong>, Purdue University (2018–2022)</li>
+      </ul>
+    </section>
+
+    <!-- Research Grants -->
+    <section class="section">
+      <h2>Research Grants & Funding</h2>
+      <ul>
+        <li><strong>Annealing Furnaces for Center for Materials Engineering Characterization (C-MEC) (2024-2025; $16,722)</strong>, Coastal Carolina University (2024–2025), Co-PI</li>
+        <li><strong>Coaching and Retention for Engineering Students at Coastal Carolina University (CARES) (2023-2029; $965,105). NSF Scholarships in Science, Technology, Engineering, and Mathematics (S-STEM). </strong>, Coastal Carolina University (2023–2029), Senior Personnel</li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section class="section">
+      <h2>Recent Publications</h2>
+      <ul>
+        <li><strong>Concrete + AI:</strong> Optimizing Concrete Strength: How Nanomaterials and AI Redefine Mix Design. <em>Case Studies in Construction Materials</em>, 2025.</li>
+        <li><strong>Nanoparticles in Concrete:</strong> A Comparative Study of the Impact of Nano-TiO2 and Nano-silica on the Durability of Concretes Cured at Different Temperatures. <em>Procedia Structural Integrity</em>, 2025.</li>
+      </ul>
+      <p>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=1762mXEAAAAJ&sortby=pubdate" target="_blank" rel="noreferrer">
+          View complete publication list on Google Scholar →
+        </a>
+      </p>
+    </section>
+
+    <!-- Awards -->
+    <section class="section">
+      <h2>Honors & Awards</h2>
+      <ul>
+        <li>🎖️ <strong>Best Paper Award</strong>, 7th International Conference on Durability of Concrete Structures (ICDCS2022), 2022</li>
+        <li>🎖️ <strong>William L. Dolch Graduate Scholarship</strong>, Purdue University, 2021</li>
+        <li>🏅 <strong>ACPA Concrete Pavement & Materials Science Fellowship</strong>, Purdue University, 2020</li>
+      </ul>
+    </section>
+
+    <!-- Conference Presentations -->
+    <section class="section">
+      <h2>Conference Presentations & Talks</h2>
+      <ul>
+        <li>"A Comparative Study of the Impact of Nano-TiO2 and Nano-silica on the Durability of Concretes Cured at Different Temperatures" — <strong>The 8th International Symposium on Nanotechnology in Construction Materials (NICOM8)</strong>, 2024, Catania, Italy.</li>
+        <li>"Comprehensive Materials Characterization Protocol for Assessing Fire-induced Damage in Concrete Elements" — <strong>31st International Conference on Structural Failures (ICSF2024)</strong>, 2024, Miedzyzdroje, Poland.</li>
+        <li>"Assessing the Effectiveness of Scaling Risk Index (SRI) as an Indicator of Scaling Resistance of Reference and Nanomodified Concretes Containing Supplementary Cementitious Materials" — <strong>Transportation Research Board Annual Meeting</strong>, 2023, Washington D.C., USA.</li>
       </ul>
     </section>
 
